@@ -19,7 +19,10 @@ The Main Objective is to
 
 ## Data set and Analysis:
 
-******************Include Link for IBM Dataset for full description ************************
+Dataset can be downloaded from https://community.ibm.com/accelerators/catalog/content/Customer-churn
+
+Complete Description of Dataset is available on https://community.ibm.com/community/user/businessanalytics/blogs/steven-macko/2019/07/11/telco-customer-churn-1113
+
 
 **The Data set contains observations of about 7043 with 33 variables**
 
