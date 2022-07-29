@@ -1,4 +1,6 @@
 # CUSTOMER CHURN ANALYSIS AND PREDICTION
+
+<img src="https://kranthi.me/wp-content/uploads/2020/04/Telecom_Churn_Prediction-e1587281300645.jpg">
  
 
 ## Objective:
@@ -75,27 +77,47 @@ In the given Data set, there were NA’s, and it is not a better approach to fit
   
 Also, the Senior Citizen Variable in Data set is marked as Integer variable where as it should be a Categorical variable and so it has been changed to same.
 
+<img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Senior%20Citizen.png">
  
 So now the data set is in proper state we can perform some analysis over the same and infer something about the Churn.
 Below is the Total churn rate in the dataset 
+
+<img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Churn%20Percent.png">
  
 •	It can be inferred that the Churn is around 27% whereas the retention rate is around 73% in the given data set.
-Below is the churn rate analysis based on demographics:
+
+<img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Churn%20based%20on%20Demographics.png">
+
+#### Below is the churn rate analysis based on demographics:
  
 •	It can be visualized that the Churn rate is similar in both males and females.
+
 •	Churn rate is more in Senior Citizen compared to retention rate.
+
 •	Churn rate is less when compared to retention among the people who are having partners.
+
 •	The churn rate follows the same rate as above who has dependents.
-Below is the churn rate analysis based on demographics:
+
+<img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Churn%20Based%20on%20Account%20info.png">
+
+#### Below is the churn rate analysis based on Account Information:
  
 •	Customers who have opted for Streaming movies has Not Opted for Streaming Movies and who has opted for Streaming Movies has very similar Churn rate and Customers with No Internet Service has very less churn Rate.
+
 •	Customers who have Month to month contract has been left the organization but who have long term contract have stayed back.
-•	Customers who have opted for Paperless bill has the churn rate more than who have not opted for paperless bill
-•	Customers who have opted for electronic check as payment method has churned than others. 
-Below is Analysis of Numeric variables of Data set:
+
+•	Customers who have opted for Paperless bill has the churn rate more than who have not opted for paperless bill.
+
+•	Customers who have opted for electronic check as payment method has churned than others.
+
+<img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Boxplots%20of%20Churn%20on%20different%20variables.png">
+
+#### Below is Analysis of Numeric variables of Data set:
  
 •	The Median value of Tenure of customers who have opted to leave is 10 and Median Tenure of customers who have opted to stay back is around 39.
+
 •	The Monthly Charges of customers who have churned is high has median value around 76 compared to customers who have not churned. The median value of customers monthly charges who have not churned is around 65.
+
 •	Total charges of the customers who have left organization is almost equal to the 1st quartile of the Total charges of the customers who have not left the organization.
 
 
@@ -105,8 +127,9 @@ Below is Analysis of Numeric variables of Data set:
 ## Model Analysis:
 
 In the Current context two of the many available models have been tried to fit i.e., logistic Regression and Decision Tree where below is the Summary of both models. 
-                          
- 			 
+
+<img src="https://github.com/ACM40960/project-Pyate/blob/main/images/combined%20image.png">
+
 We can see that the Accuracy and Sensitivity of the Logistic Regression is High compared to Decision Tree even Specificity is reasonal among the both. We can also infer that from the summary tables Logistic Regession perfroms slightly better than the Decision tree and can be used for the future predictions.
 Also From the ROC AUC curve we an assess that Logistic regression is better performing one than the Decision Tree.
 
