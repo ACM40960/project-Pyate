@@ -80,7 +80,8 @@ Also, the Senior Citizen Variable in Data set is marked as Integer variable wher
 <img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Senior%20Citizen.png">
  
 So now the data set is in proper state we can perform some analysis over the same and infer something about the Churn.
-Below is the Total churn rate in the dataset 
+
+### Below is the Total churn rate in the dataset 
 
 <img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Churn%20Percent.png">
  
