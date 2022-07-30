@@ -102,17 +102,25 @@ On other hand it is also possible to determine the churn Percentage of the given
 
 ### The Process for the above is as below:
 
-Once the clone of whole repository is completed and Upon completion of installation of R, R studio and all the mentioned packages, 
+Once the clone of whole repository is completed and Upon completion of installation of R, R studio and all the mentioned packages
+
 •	Open the Ui.R and Server.R files in Rstudio.
+
 *************************Open and Run App************************
 •	Click “Run App” at the top mid of the screen (which is marked in above image).
+
 **********************Shiny app Merged Image****************************
 •	Provide values from the available Inputs and Click Predict to if a customer would Churn or Not Churn.
-•	On the Other Tab to Get the Churn Percentage Click on the Browse button and Select the Provided “Churn Data.csv”
+
+•	On the Other Tab to Get the Churn Percentage Click on the Browse button and Select the Provided “Churn Data.csv”.
+
 •	Once the Upload is done, Model would predict the Outcomes of Each individual customer in given excel.
+
 •	Finally, a plot would be displayed with the percent of Customers who would churn and percent of customers who would retain them self with the organization.
  (As shown below)
+ 
  ************************Dataset merged image*********************************************
+ 
 •	If the dataset provided is of improper format, an user friendly message would be displayed asking the user to provide a valid Dataset.
 (To Check above scenario please load the “Improper Dataset” from the Model folder by using browse option)
  
