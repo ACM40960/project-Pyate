@@ -98,18 +98,20 @@ _Note: One can use the Dataset from the repository available_
 
 Post the Data Wrangling and EDA the Models were trained and fit over the dataset. the 2 models trained are Logistic Regression and Decision Trees. Among both Models for the Current Data Logisatic Regression is proven to be better and using the same the R Shiny App was built using which one can predict about individual customer would churn or not based on given inputs.
 
-On other hand it is also possible to determine the churn Percentage of the given dataset by uploading the .csv file\
+On other hand it is also possible to determine the churn Percentage of the given dataset by uploading the .csv file.
 
 ### The Process for the above is as below:
 
 Once the clone of whole repository is completed and Upon completion of installation of R, R studio and all the mentioned packages
 
-•	Open the Ui.R and Server.R files in Rstudio.
+•	Open the Ui.R and Server.R files in R Studio.
 
-*************************Open and Run App************************
+<img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Open%20and%20Run%20App.png">
+
 •	Click “Run App” at the top mid of the screen (which is marked in above image).
 
-**********************Shiny app Merged Image****************************
+<img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Shiny%20App%20Merged.png">
+
 •	Provide values from the available Inputs and Click Predict to if a customer would Churn or Not Churn.
 
 •	On the Other Tab to Get the Churn Percentage Click on the Browse button and Select the Provided “Churn Data.csv”.
@@ -119,7 +121,7 @@ Once the clone of whole repository is completed and Upon completion of installat
 •	Finally, a plot would be displayed with the percent of Customers who would churn and percent of customers who would retain them self with the organization.
  (As shown below)
  
- ************************Dataset merged image*********************************************
+ <img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Merged%20Dataset%20images.png">
  
 •	If the dataset provided is of improper format, an user friendly message would be displayed asking the user to provide a valid Dataset.
 (To Check above scenario please load the “Improper Dataset” from the Model folder by using browse option)
