@@ -111,7 +111,7 @@ So now the data set is in proper state we can perform some analysis over the sam
 
 •	Churn rate is more in Senior Citizen compared to retention rate.Churn rate is less when compared to retention among the people who are having partners and the churn rate follows the same rate as above who has dependents.
  
-* Customers who have opted for Streaming movies has Not Opted for Streaming Movies and who has opted for Streaming Movies has very similar Churn rate and Customers with No Internet Service has very less churn Rate.
+*Customers who have opted for Streaming movies has Not Opted for Streaming Movies and who has opted for Streaming Movies has very similar Churn rate and Customers with No Internet Service has very less churn Rate.
 
 •	Customers who have Month to month contract have left the organization but who have long term contract have stayed back.Customers who have opted for Paperless bill has the churn rate more than who have not opted for paperless bill.Customers who have opted for electronic check as payment method has churned than others.
 
