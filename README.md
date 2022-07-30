@@ -52,7 +52,7 @@ As the Project is developed in R one must need R and R studio to run the project
 •	Once the file is downloaded double click and follow the instructions to complete the installation.
 (For step-by-step process please visit  <a href="https://data-flair.training/blogs/how-to-install-r/" target="_blank">here</a>)
 
-•	Install.packages("<Package name>”) is the command used to install the required libraries required for the project and below are the mentioned libraries needed for model to run successfully. Below are the packages required to run the project successfully
+•	Install.packages("_Package name_”) is the command used to install the required libraries required for the project and below are the mentioned libraries needed for model to run successfully. Below are the packages required to run the project successfully
 
 _“ggplot2” – This Package helps in creating beautiful plots and visualize the data in graphical format._
 
@@ -69,6 +69,10 @@ _“pROC” – This Package helps in producing the ROC curves which would help 
 _“caret” – This Package provides functionalities in train and test over 230 models. It also streamlines the process of creating models._
 
 _“glmnet” - This Package enables us to perform regularization of models that are being fit for the betterment of Models._
+
+_"plotly" - This Package ****************************************************************************._
+
+_"shiny" - This Package enables us to create intercative apps using which visual analysis and predicting using models can be performed._
 
 ## Data set:
 
@@ -89,6 +93,29 @@ The variables include information about:
 •	Demographic info about customers – gender, age range, and if they have partners and dependents
 
 _Note: One can use the Dataset from the repository available_
+
+## Prediction Using R Shiny App:
+
+Post the Data Wrangling and EDA the Models were trained and fit over the dataset. the 2 models trained are Logistic Regression and Decision Trees. Among both Models for the Current Data Logisatic Regression is proven to be better and using the same the R Shiny App was built using which one can predict about individual customer would churn or not based on given inputs.
+
+On other hand it is also possible to determine the churn Percentage of the given dataset by uploading the .csv file\
+
+### The Process for the above is as below:
+
+Once the clone of whole repository is completed and Upon completion of installation of R, R studio and all the mentioned packages, 
+•	Open the Ui.R and Server.R files in Rstudio.
+*************************Open and Run App************************
+•	Click “Run App” at the top mid of the screen (which is marked in above image).
+**********************Shiny app Merged Image****************************
+•	Provide values from the available Inputs and Click Predict to if a customer would Churn or Not Churn.
+•	On the Other Tab to Get the Churn Percentage Click on the Browse button and Select the Provided “Churn Data.csv”
+•	Once the Upload is done, Model would predict the Outcomes of Each individual customer in given excel.
+•	Finally, a plot would be displayed with the percent of Customers who would churn and percent of customers who would retain them self with the organization.
+ (As shown below)
+ ************************Dataset merged image*********************************************
+•	If the dataset provided is of improper format, an user friendly message would be displayed asking the user to provide a valid Dataset.
+(To Check above scenario please load the “Improper Dataset” from the Model folder by using browse option)
+ 
 
 
 ## Data Wrangling and EDA:
