@@ -13,84 +13,74 @@ only on these "high risk" clients. the final goal is to expand its coverage area
 this market lies within the customer itself.
 The Main Objective is to
 
-•	Finding the % of Churn Clients and clients that keep in with the dynamic services. 
+•	Find the % of Churn Clients and clients that keep in with the dynamic services. 
 
-•	Analyzing the information in terms of different highlights mindful for customer Churn 
+•	Analyze the information in terms of different highlights to understand reasons for customer Churn 
 
-•	Finding a most suited machine learning show for rectify classification of Churn and non-churn customers.
+•	Find a most suited machine learning model to predict Churn and non-churn customers.
 
 # Clone the Project :
 
 To clone the project the easy way is to install GIT DESKTOP <a href="https://desktop.github.com/" target="_blank">here</a> 
 (download the installation file based on the OS) 
 
-Once the Installation file is downloaded Doubke click on the file and Follow the instructions.
+Once the Installation file is downloaded Double click on the file and Follow the instructions.
 (i.e, either set up repository based on GitHub account or skip the step and provide name and email.)
 
 <img src="https://github.com/ACM40960/project-Pyate/blob/main/images/git%20step1.png">
 
-once the above screen is reached, Click "Clone a repository from the internet"
+Once the above screen is reached, Click "Clone a repository from the internet"
 
 <img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Clone%20URL%20Step.png">
 
-In the next screen select the URL Tab and enter URL and local file for repository to be cloned into as shown in image.
+In the next screen, select the URL Tab and enter URL and choose local file for repository to be cloned into as shown in image.
 
-Finally click clone nad the Repository would be cloned into local machine.
+Finally click `clone` and the Repository would be cloned into local machine.
 
 # Software and Library requirements to run the Project:
+
+Software used to build best suited models is R and IDE used is R studio.
 
 As the Project is developed in R one must need R and R studio to run the project and below are the instructions to install the same.
 
 •	Install R (Version 4.1.2 or above) <a href="https://cran.r-project.org/bin/windows/base/" target="_blank">from here</a>
 (Above is the URL for Windows OS and for other OS please <a href="https://data-flair.training/blogs/how-to-install-r/" target="_blank">reach here</a>  for step-by-step process).
 
-•	Once the file is downloaded double click and follow the instructions to complete the installation.
+•	Once the file is downloaded double click the installation file and follow the instructions to complete the installation.
 
 •	R studio – Install R Studio an IDE to code in R <a href="https://www.rstudio.com/products/rstudio/download/" target="_blank">from here</a> 
 (choose based on Operating System).
 
-•	Once the file is downloaded double click and follow the instructions to complete the installation.
+•	Once the file is downloaded double click  the installation file and follow the instructions to complete the installation.
 (For step-by-step process please visit  <a href="https://data-flair.training/blogs/how-to-install-r/" target="_blank">here</a>)
 
-•	Install.packages("_Package name_”) is the command used to install the required libraries required for the project and below are the mentioned libraries needed for model to run successfully. Below are the packages required to run the project successfully
+•	Install.packages(`"_Package name_”`) is the command used to install the required libraries required for the project and below are the mentioned libraries needed for model to run successfully. Below are the packages required to run the project successfully
 
-_“ggplot2” – This Package helps in creating beautiful plots and visualize the data in graphical format._
+_`“ggplot2”` – This Package helps in creating beautiful plots and visualize the data in graphical format._
 
-_“cowplot” – This is an addon to ggplot which provides different themes, functions to align and annotate plots._
+_`“cowplot”` – This is an addon to ggplot which provides different themes, functions to align and annotate plots._
 
-_“stringr” – This package has functions that ease working with strings and helps in string manipulations._
+_`“stringr”` – This package has functions that ease working with strings and helps in string manipulations._
 
-_“rpart” – This Package helps in building classification and regression trees._
+_`“rpart”` – This Package helps in building classification and regression trees._
 
-_“partykit” - This Package helps in visualizing and summarizing the classification models._
+_`“partykit”` - This Package helps in visualizing and summarizing the classification models._
 
-_“pROC” – This Package helps in producing the ROC curves which would help in analyze models._
+_`“pROC” `– This Package helps in producing the ROC curves which would help in analyze models._
 
-_“caret” – This Package provides functionalities in train and test over 230 models. It also streamlines the process of creating models._
+_`“caret”` – This Package provides functionalities in train and test over 230 models. It also streamlines the process of creating models._
 
-_“glmnet” - This Package enables us to perform regularization of models that are being fit for the betterment of Models._
+_`“glmnet”` - This Package enables us to perform regularization of models that are being fit for the betterment of Models._
 
-_"plotly" - This Package ****************************************************************************._
+_`"plotly"` - This Package helps user to create interactive plots._
 
-_"shiny" - This Package enables us to create intercative apps using which visual analysis and predicting using models can be performed._
+_`"shiny"` - This Package enables us to create intercative apps using which visual analysis and predicting using models can be performed._
 
 ## Data set:
 
 The Dataset used is Telco Churn Dataset by IBM which is Publically available and can be downloaded from <a href="https://community.ibm.com/accelerators/catalog/content/Customer-churn" target="_blank">here</a> 
 
 Complete Description of Dataset is available <a href="https://community.ibm.com/community/user/businessanalytics/blogs/steven-macko/2019/07/11/telco-customer-churn-1113" target="_blank">here</a>
-
-**The Data set contains observations of about 7043 with 33 variables**
-
-The variables include information about:
-
-•	Customers who left within the last month – the column is called Churn
-
-•	Services that each customer has signed up for – phone, multiple lines, internet, online security, online backup, device protection, tech support, and streaming TV and movies
-
-•	Customer account information – how long they’ve been a customer, contract, payment method, paperless billing, monthly charges, and total charges
-
-•	Demographic info about customers – gender, age range, and if they have partners and dependents
 
 _Note: One can use the Dataset from the repository available_
 
@@ -132,8 +122,6 @@ Once the clone of whole repository is completed and Upon completion of installat
 
 In the given Data set, there were NA’s, and it is not a better approach to fit a model with NA’s as the same may lead to biased or improper models. Upon analyzing the data, the NA’s are in column Total Charges and is due to Tenure being ‘0’. By the same we can infer that the people were newly joined and can keep their total charges as ‘0’.
 
-* **************ADD OUTPUT OF STRUCTURE OF DATASET****************************
-  
 Also, the Senior Citizen Variable in Data set is marked as Integer variable where as it should be a Categorical variable and so it has been changed to same.
 
 <img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Senior%20Citizen.png">
