@@ -56,6 +56,8 @@ As the Project is developed in R one must need R and R studio to run the project
 
 •	Install.packages(`"_Package name_”`) is the command used to install the required libraries required for the project and below are the mentioned libraries needed for model to run successfully. Below are the packages required to run the project successfully
 
+•	To install packages use above mentioned command with required package name in Console window of R Studio.
+
 _`“ggplot2”` – This Package helps in creating beautiful plots and visualize the data in graphical format._
 
 _`“cowplot”` – This is an addon to ggplot which provides different themes, functions to align and annotate plots._
@@ -86,7 +88,7 @@ _Note: One can use the Dataset from the repository available_
 
 ## Prediction Using R Shiny App:
 
-Post the Data Wrangling and EDA the Models were trained and fit over the dataset. the 2 models trained are Logistic Regression and Decision Trees. Among both Models for the Current Data Logisatic Regression is proven to be better and using the same the R Shiny App was built using which one can predict about individual customer would churn or not based on given inputs.
+Post the Data Wrangling and EDA the models were trained and fit over the dataset. The 2 models trained are Logistic Regression and Decision Trees. Among both Models  built for the Current Data Logistic Regression is proven to be better and using the same the R Shiny App was built with which one can predict if an individual customer would churn or not based on given inputs.
 
 On other hand it is also possible to determine the churn Percentage of the given dataset by uploading the .csv file.
 
@@ -94,11 +96,27 @@ On other hand it is also possible to determine the churn Percentage of the given
 
 Once the clone of whole repository is completed and Upon completion of installation of R, R studio and all the mentioned packages
 
-•	Open the Ui.R and Server.R files in R Studio.
+•	from the MODEL folder open the Ui.R and Server.R files in R Studio.
 
 <img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Open%20and%20Run%20App.png">
 
 •	Click “Run App” at the top mid of the screen (which is marked in above image).
+
+•	The First Tab is helpful to predict if the individual customer would churn or not.
+
+•	To Check for `Churn` Status please provide the inputs as suggested in `“Sample Input for Churn Result.Txt”` from Model folder and click Predict Button for Result.
+(One can use any values the above is just to save time).
+
+•	To Check for `Retain` Status please provide the inputs as suggested in `“Sample Input for Retain.txt”` from Model folder and click Predict Button for Result.
+(One can use any values the above is just to save time).
+
+•	The Second Tab “Prediction for Multiple Customers “is helpful to predict the Total Churn Percentage of given set of customers.
+
+•	To Load the Multiple Customers data, please click Browse button and choose “Churn Data” from Model folder.
+
+•	Also, it would provide analysis results based on different categories like Demographics, Account Information, Service Information of Customers.
+
+•	One can wish to Visualize or not to visualize the Analysis plots by simply check or uncheck the check box provided.
 
 <img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Shiny%20App%20Merged.png">
 
