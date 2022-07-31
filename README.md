@@ -35,7 +35,7 @@ Once the above screen is reached, Click "Clone a repository from the internet"
 
 In the next screen, select the URL Tab and enter URL and choose local file for repository to be cloned into as shown in image.
 
-Finally click clone and the Repository would be cloned into local machine.
+Finally click `clone` and the Repository would be cloned into local machine.
 
 # Software and Library requirements to run the Project:
 
@@ -46,12 +46,12 @@ As the Project is developed in R one must need R and R studio to run the project
 •	Install R (Version 4.1.2 or above) <a href="https://cran.r-project.org/bin/windows/base/" target="_blank">from here</a>
 (Above is the URL for Windows OS and for other OS please <a href="https://data-flair.training/blogs/how-to-install-r/" target="_blank">reach here</a>  for step-by-step process).
 
-•	Once the file is downloaded double click and follow the instructions to complete the installation.
+•	Once the file is downloaded double click the installation file and follow the instructions to complete the installation.
 
 •	R studio – Install R Studio an IDE to code in R <a href="https://www.rstudio.com/products/rstudio/download/" target="_blank">from here</a> 
 (choose based on Operating System).
 
-•	Once the file is downloaded double click and follow the instructions to complete the installation.
+•	Once the file is downloaded double click  the installation file and follow the instructions to complete the installation.
 (For step-by-step process please visit  <a href="https://data-flair.training/blogs/how-to-install-r/" target="_blank">here</a>)
 
 •	Install.packages(`"_Package name_”`) is the command used to install the required libraries required for the project and below are the mentioned libraries needed for model to run successfully. Below are the packages required to run the project successfully
