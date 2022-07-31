@@ -73,9 +73,16 @@ shinyUI(fluidPage(
     (
       #Upload Button
       fileInput('file1', 'Choose DataSet for Prediction',accept = c(".csv")),
+      radioButtons("choice", h3("Analysis Plot by"),
+                   choices = list("Demographics" = 1, "Account Information" = 2, "Service Information" = 3),
+                   selected = 1),
+      checkboxInput(inputId = "show_plot",
+                    label = strong("Show Dataset Summary"),
+                    value = FALSE)
     ),    
     
-  mainPanel(plotlyOutput("distPlot")) 
+  mainPanel(plotlyOutput("distPlot"),
+            plotOutput("ana_plot")) 
     )
     )
   )

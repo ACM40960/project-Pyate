@@ -11,6 +11,7 @@ library(shiny)
 library(ggplot2)
 library(stringr)
 library(plotly)
+library(cowplot)
 load("LogisticRegression.rda")
 
 # Define server logic required to draw a histogram
@@ -55,7 +56,7 @@ shinyServer(function(input, output) {
       isolate(paste("<font color=\"#FF0000\">","Churn","</font>"))
     }
     else{
-      isolate(paste("<font color=\"#00FF00\">","Not Churn","</font>"))
+      isolate(paste("<font color=\"#00FF00\">","Retain","</font>"))
     }
   })
 
@@ -102,10 +103,91 @@ shinyServer(function(input, output) {
         geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn))) + 
         scale_y_continuous(labels=scales::percent) + theme_bw()+ xlab("Churn") + 
         ylab("Percent")+ ggtitle("Churn Percent")+ theme())
+      
+      
     }
     else{
     ggplotly(ggplot() + annotate("text",x=10,y=10,size=6,label = "The dataset doesn't match with the format. Please load a Valid Dataset") + theme_void())
     }
+  })
+  output$ana_plot<-renderPlot({
+    
+    df1 <- data_file()
+    column_names <- colnames(df1)
+    column_names <- gsub(" ","",column_names)
+    df1 <- df1[,(tolower(names(df1)) %in% tolower(exst_colnames))]
+    if(ncol(df1) == length(exst_colnames) && input$show_plot){
+      
+      df1<-na.omit(df1)
+      df1$SeniorCitizen <- as.factor(ifelse(df1$SeniorCitizen==1, 'YES', 'NO'))
+      df1<- data.frame(lapply(df1, function(x) {
+        gsub("No internet service", "No", x)}))
+      
+      df1<- data.frame(lapply(df1, function(x) {
+        gsub("No phone service", "No", x)}))
+      # Numerical columns to separate dataset
+      num_columns <- c("tenure", "MonthlyCharges", "TotalCharges")
+      df1[num_columns] <- sapply(df1[num_columns], as.numeric)
+      # Normalization
+      churn_int <- df1[,c("tenure", "MonthlyCharges", "TotalCharges")]
+      #churn_int <- data.frame(scale(churn_int))
+      # Remove customer ID and numerical values (dataset for only categorical variables)
+      churn_cat <- df1[,-c(5,18,19)]
+      
+      #Creating Dummy Variables for categorical data
+      dummy<- data.frame(sapply(churn_cat,function(x) data.frame(model.matrix(~x-1,data =churn_cat))[,-1]))
+      
+      #Combining the data
+      churn_final <- cbind(churn_int,dummy)
+      prob <- predict(fit,churn_final,type = "response")
+      df1$Churn <- ifelse(prob>0.5,"Churn","No")
+      if(input$choice == 1){
+        plot_grid(
+          
+          ggplot(df1, aes(x=gender,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)))+ scale_y_continuous(labels=scales::percent) + ylab("Percent") + theme_bw()+theme(legend.position="none"),
+          
+          ggplot(df1, aes(x=SeniorCitizen,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw()+theme(legend.position="none"),
+          
+          ggplot(df1, aes(x=Partner,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw(),
+          
+          ggplot(df1, aes(x=Dependents,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw()+theme(legend.position="none"))
+      }
+      else if(input$choice ==2 ){
+        plot_grid(
+          
+          ggplot(df1, aes(x=PhoneService,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw()+theme(legend.position="none"),
+          
+          ggplot(df1, aes(x=MultipleLines,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw()+theme(legend.position="none") + 
+            scale_x_discrete(labels = function(x) str_wrap(x, width = 10)),
+          
+          ggplot(df1, aes(x=InternetService,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw()+theme(legend.position="none"), 
+          
+          ggplot(df1, aes(x=OnlineSecurity,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw()+theme(legend.position="none")+scale_x_discrete(labels = function(x) str_wrap(x, width = 10)),
+          
+          ggplot(df1, aes(x=OnlineBackup,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw()+theme(legend.position="none")+ scale_x_discrete(labels = function(x) str_wrap(x, width = 10)),
+          
+          ggplot(df1, aes(x=DeviceProtection,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw()+theme(legend.position="none")+ scale_x_discrete(labels = function(x) str_wrap(x, width = 10)),
+          
+          ggplot(df1, aes(x=TechSupport,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw()+theme(legend.position="none") + scale_x_discrete(labels = function(x) str_wrap(x, width = 10)),
+          
+          ggplot(df1, aes(x=StreamingTV,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw() + scale_x_discrete(labels = function(x) str_wrap(x, width = 10))
+        )
+        
+      }
+      else if(input$choice == 3){
+        plot_grid(
+          
+          ggplot(df1, aes(x=StreamingMovies,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw() + theme(legend.position="none") + scale_x_discrete(labels = function(x) str_wrap(x, width = 10)), 
+          
+          ggplot(df1, aes(x=Contract,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw() + scale_x_discrete(labels = function(x) str_wrap(x, width = 10)),
+          
+          ggplot(df1, aes(x=PaperlessBilling,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw() + theme(legend.position="none") + scale_x_discrete(labels = function(x) str_wrap(x, width = 10)),
+          
+          ggplot(df1, aes(x=PaymentMethod,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw() + theme(legend.position="none") + scale_x_discrete(labels = function(x) str_wrap(x, width = 10))
+        )
+      }
+    }
+    
   })
   
 })
