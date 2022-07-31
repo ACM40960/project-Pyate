@@ -13,11 +13,11 @@ only on these "high risk" clients. the final goal is to expand its coverage area
 this market lies within the customer itself.
 The Main Objective is to
 
-•	Finding the % of Churn Clients and clients that keep in with the dynamic services. 
+•	Find the % of Churn Clients and clients that keep in with the dynamic services. 
 
-•	Analyzing the information in terms of different highlights mindful for customer Churn 
+•	Analyze the information in terms of different highlights to understand reasons for customer Churn 
 
-•	Finding a most suited machine learning show for rectify classification of Churn and non-churn customers.
+•	Find a most suited machine learning model to predict Churn and non-churn customers.
 
 # Clone the Project :
 
@@ -35,9 +35,11 @@ once the above screen is reached, Click "Clone a repository from the internet"
 
 In the next screen select the URL Tab and enter URL and local file for repository to be cloned into as shown in image.
 
-Finally click clone nad the Repository would be cloned into local machine.
+Finally click clone and the Repository would be cloned into local machine.
 
 # Software and Library requirements to run the Project:
+
+Software used to build best suited models is R and IDE used is R studio.
 
 As the Project is developed in R one must need R and R studio to run the project and below are the instructions to install the same.
 
@@ -52,27 +54,27 @@ As the Project is developed in R one must need R and R studio to run the project
 •	Once the file is downloaded double click and follow the instructions to complete the installation.
 (For step-by-step process please visit  <a href="https://data-flair.training/blogs/how-to-install-r/" target="_blank">here</a>)
 
-•	Install.packages("_Package name_”) is the command used to install the required libraries required for the project and below are the mentioned libraries needed for model to run successfully. Below are the packages required to run the project successfully
+•	Install.packages(`"_Package name_”`) is the command used to install the required libraries required for the project and below are the mentioned libraries needed for model to run successfully. Below are the packages required to run the project successfully
 
 _“ggplot2” – This Package helps in creating beautiful plots and visualize the data in graphical format._
 
-_“cowplot” – This is an addon to ggplot which provides different themes, functions to align and annotate plots._
+_`“cowplot”` – This is an addon to ggplot which provides different themes, functions to align and annotate plots._
 
-_“stringr” – This package has functions that ease working with strings and helps in string manipulations._
+_`“stringr”` – This package has functions that ease working with strings and helps in string manipulations._
 
-_“rpart” – This Package helps in building classification and regression trees._
+_`“rpart”` – This Package helps in building classification and regression trees._
 
-_“partykit” - This Package helps in visualizing and summarizing the classification models._
+_`“partykit”` - This Package helps in visualizing and summarizing the classification models._
 
-_“pROC” – This Package helps in producing the ROC curves which would help in analyze models._
+_`“pROC” `– This Package helps in producing the ROC curves which would help in analyze models._
 
-_“caret” – This Package provides functionalities in train and test over 230 models. It also streamlines the process of creating models._
+_`“caret”` – This Package provides functionalities in train and test over 230 models. It also streamlines the process of creating models._
 
-_“glmnet” - This Package enables us to perform regularization of models that are being fit for the betterment of Models._
+_`“glmnet”` - This Package enables us to perform regularization of models that are being fit for the betterment of Models._
 
-_"plotly" - This Package ****************************************************************************._
+_`"plotly"` - This Package helps user to create interactive plots._
 
-_"shiny" - This Package enables us to create intercative apps using which visual analysis and predicting using models can be performed._
+_`"shiny"` - This Package enables us to create intercative apps using which visual analysis and predicting using models can be performed._
 
 ## Data set:
 
