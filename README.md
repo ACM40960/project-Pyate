@@ -104,10 +104,10 @@ Once the clone of whole repository is completed and Upon completion of installat
 
 •	The First Tab is helpful to predict if the individual customer would churn or not.
 
-•	To Check for `Churn` Status please provide the inputs as suggested in `“Sample Input for Churn Result.Txt”` from Model folder and click Predict Button for Result.
+•	To get result as `Churn`, please provide the inputs as suggested in `“Sample Input for Churn Result.Txt”` from Model folder and click Predict Button for Result.
 (One can use any values the above is just to save time).
 
-•	To Check for `Retain` Status please provide the inputs as suggested in `“Sample Input for Retain.txt”` from Model folder and click Predict Button for Result.
+•	To get result as  `Retain`, please provide the inputs as suggested in `“Sample Input for Retain.txt”` from Model folder and click Predict Button for Result.
 (One can use any values the above is just to save time).
 
 •	The Second Tab `“Prediction for Multiple Customers"` is helpful to predict the Total Churn Percentage of given set of customers.
@@ -117,8 +117,6 @@ Once the clone of whole repository is completed and Upon completion of installat
 •	Also, it would provide analysis results based on different categories like Demographics, Account Information, Service Information of Customers.
 
 •	One can wish to Visualize or not to visualize the Analysis plots by simply `check or uncheck` the check box provided.
-
-•	Finally, a plot would be displayed with the percent of Customers who would churn and percent of customers who would retain them self with the organization.
 
 <img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Shiny%20App%20Merged_1.png">
  
