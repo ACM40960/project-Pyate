@@ -126,35 +126,6 @@ Once the clone of whole repository is completed and Upon completion of installat
 
  <img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Merged%20Dataset%20images.png"> 
 
-
-## Data Wrangling and EDA:
-
-In the given Data set, there were NA’s, and it is not a better approach to fit a model with NA’s as the same may lead to biased or improper models. Upon analyzing the data, the NA’s are in column Total Charges and is due to Tenure being ‘0’. By the same we can infer that the people were newly joined and can keep their total charges as ‘0’.
-
-Also, the Senior Citizen Variable in Data set is marked as Integer variable where as it should be a Categorical variable and so it has been changed to same.
-
-<img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Senior%20Citizen.png">
- 
-So now the data set is in proper state we can perform some analysis over the same and infer something about the Churn.
- 
- <img src="https://github.com/ACM40960/project-Pyate/blob/main/images/EDA%20Merged.png">
-
- ### Summary of Analysis Over the Dataset:
- 
-•	It can be inferred that the Churn is around 27% whereas the retention rate is around 73% in the given data set.It can be visualized that the Churn rate is similar in both males and females.
-
-•	Churn rate is more in Senior Citizen compared to retention rate.Churn rate is less when compared to retention among the people who are having partners and the churn rate follows the same rate as above who has dependents.
- 
-•	Customers who have opted for Streaming movies has Not Opted for Streaming Movies and who has opted for Streaming Movies has very similar Churn rate and Customers with No Internet Service has very less churn Rate.
-
-•	Customers who have Month to month contract have left the organization but who have long term contract have stayed back.Customers who have opted for Paperless bill has the churn rate more than who have not opted for paperless bill.Customers who have opted for electronic check as payment method has churned than others.
-
-•	The Median value of Tenure of customers who have opted to leave is 10 and Median Tenure of customers who have opted to stay back is around 39.
-
-•	The Monthly Charges of customers who have churned is high has median value around 76 compared to customers who have not churned. The median value of customers monthly charges who have not churned is around 65.
-
-•	Total charges of the customers who have left organization is almost equal to the 1st quartile of the Total charges of the customers who have not left the organization.
-
 ## Model Building and Model Summary:
 
 In the Current context two of the many available models have been tried to fit i.e., logistic Regression and Decision Tree where below is the Summary of both models. 
