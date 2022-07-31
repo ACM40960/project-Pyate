@@ -120,7 +120,7 @@ Once the clone of whole repository is completed and Upon completion of installat
 
 <img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Shiny%20App%20Merged_1.png">
  
-•	To Check above Improper text scenario, please load the `“Improper Dataset.csv”` from the Model folder by using browse option
+•	To Check the what happens if improper dataset is loaded, please load the `“Improper Dataset.csv”` from the Model folder by using browse option.
  
 •	If the dataset provided is of improper format, an user friendly message would be displayed asking the user to provide a valid Dataset.
 
