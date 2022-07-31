@@ -169,6 +169,7 @@ shinyServer(function(input, output) {
           ggplot(df1, aes(x=DeviceProtection,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw()+theme(legend.position="none")+ scale_x_discrete(labels = function(x) str_wrap(x, width = 10)),
           
           ggplot(df1, aes(x=TechSupport,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw()+theme(legend.position="none") + scale_x_discrete(labels = function(x) str_wrap(x, width = 10)),
+          ggplot(df1, aes(x=StreamingMovies,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw() + theme(legend.position="none") + scale_x_discrete(labels = function(x) str_wrap(x, width = 10)),
           
           ggplot(df1, aes(x=StreamingTV,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw() + scale_x_discrete(labels = function(x) str_wrap(x, width = 10))
         )
@@ -176,9 +177,6 @@ shinyServer(function(input, output) {
       }
       else if(input$choice == 3){
         plot_grid(
-          
-          ggplot(df1, aes(x=StreamingMovies,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw() + theme(legend.position="none") + scale_x_discrete(labels = function(x) str_wrap(x, width = 10)), 
-          
           ggplot(df1, aes(x=Contract,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw() + scale_x_discrete(labels = function(x) str_wrap(x, width = 10)),
           
           ggplot(df1, aes(x=PaperlessBilling,fill=Churn))+ geom_bar(aes(y = (..count..)/sum(..count..), fill = factor(Churn)),position = 'fill')+scale_y_continuous(labels=scales::percent) + ylab("Percent")+theme_bw() + theme(legend.position="none") + scale_x_discrete(labels = function(x) str_wrap(x, width = 10)),

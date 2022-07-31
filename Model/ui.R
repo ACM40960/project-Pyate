@@ -5,7 +5,7 @@ library(plotly)
 shinyUI(fluidPage(
   titlePanel("Customer Churn Prediction"),
   tabsetPanel(
-    tabPanel("Predict for input data","Predict if the customer will Churn or Not",
+    tabPanel("Predict for Individual CUstomer",
              fluidRow(
                
                column(3, 
@@ -66,7 +66,7 @@ shinyUI(fluidPage(
                       
                )
              ) ),
-    tabPanel("Prediction for dataset","Predict for a user given dataset",
+    tabPanel("Prediction for Multiple Customers",
   sidebarLayout(
  
     sidebarPanel
@@ -74,10 +74,10 @@ shinyUI(fluidPage(
       #Upload Button
       fileInput('file1', 'Choose DataSet for Prediction',accept = c(".csv")),
       radioButtons("choice", h3("Analysis Plot by"),
-                   choices = list("Demographics" = 1, "Account Information" = 2, "Service Information" = 3),
+                   choices = list("Demographics" = 1, "Service Information" = 2, "Account Information" = 3),
                    selected = 1),
       checkboxInput(inputId = "show_plot",
-                    label = strong("Show Dataset Summary"),
+                    label = strong("Analyse Based on Category"),
                     value = FALSE)
     ),    
     
