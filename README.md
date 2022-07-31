@@ -39,7 +39,7 @@ Finally click `clone` and the Repository would be cloned into local machine.
 
 # Software and Library requirements to run the Project:
 
-Software used to build best suited models is R and IDE used is R studio.
+_Software used to build models is R and IDE used is R studio._
 
 As the Project is developed in R one must need R and R studio to run the project and below are the instructions to install the same.
 
