@@ -110,13 +110,13 @@ Once the clone of whole repository is completed and Upon completion of installat
 •	To Check for `Retain` Status please provide the inputs as suggested in `“Sample Input for Retain.txt”` from Model folder and click Predict Button for Result.
 (One can use any values the above is just to save time).
 
-•	The Second Tab “Prediction for Multiple Customers “is helpful to predict the Total Churn Percentage of given set of customers.
+•	The Second Tab `“Prediction for Multiple Customers"` is helpful to predict the Total Churn Percentage of given set of customers.
 
-•	To Load the Multiple Customers data, please click Browse button and choose “Churn Data” from Model folder.
+•	To Load the Multiple Customers data, please click `Browse` button and choose “Churn Data” from Model folder.
 
 •	Also, it would provide analysis results based on different categories like Demographics, Account Information, Service Information of Customers.
 
-•	One can wish to Visualize or not to visualize the Analysis plots by simply check or uncheck the check box provided.
+•	One can wish to Visualize or not to visualize the Analysis plots by simply `check or uncheck` the check box provided.
 
 <img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Shiny%20App%20Merged.png">
 
