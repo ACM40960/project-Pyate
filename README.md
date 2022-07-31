@@ -86,7 +86,7 @@ _Note: One can use the Dataset from the repository available_
 
 ## Prediction Using R Shiny App:
 
-Post the Data Wrangling and EDA the Models were trained and fit over the dataset. the 2 models trained are Logistic Regression and Decision Trees. Among both Models for the Current Data Logisatic Regression is proven to be better and using the same the R Shiny App was built using which one can predict about individual customer would churn or not based on given inputs.
+Post the Data Wrangling and EDA the models were trained and fit over the dataset. The 2 models trained are Logistic Regression and Decision Trees. Among both Models  built for the Current Data Logistic Regression is proven to be better and using the same the R Shiny App was built with which one can predict if an individual customer would churn or not based on given inputs.
 
 On other hand it is also possible to determine the churn Percentage of the given dataset by uploading the .csv file.
 
