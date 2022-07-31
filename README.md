@@ -56,7 +56,7 @@ As the Project is developed in R one must need R and R studio to run the project
 
 •	Install.packages(`"_Package name_”`) is the command used to install the required libraries required for the project and below are the mentioned libraries needed for model to run successfully. Below are the packages required to run the project successfully
 
-_“ggplot2” – This Package helps in creating beautiful plots and visualize the data in graphical format._
+_`“ggplot2”` – This Package helps in creating beautiful plots and visualize the data in graphical format._
 
 _`“cowplot”` – This is an addon to ggplot which provides different themes, functions to align and annotate plots._
 
@@ -81,18 +81,6 @@ _`"shiny"` - This Package enables us to create intercative apps using which visu
 The Dataset used is Telco Churn Dataset by IBM which is Publically available and can be downloaded from <a href="https://community.ibm.com/accelerators/catalog/content/Customer-churn" target="_blank">here</a> 
 
 Complete Description of Dataset is available <a href="https://community.ibm.com/community/user/businessanalytics/blogs/steven-macko/2019/07/11/telco-customer-churn-1113" target="_blank">here</a>
-
-**The Data set contains observations of about 7043 with 33 variables**
-
-The variables include information about:
-
-•	Customers who left within the last month – the column is called Churn
-
-•	Services that each customer has signed up for – phone, multiple lines, internet, online security, online backup, device protection, tech support, and streaming TV and movies
-
-•	Customer account information – how long they’ve been a customer, contract, payment method, paperless billing, monthly charges, and total charges
-
-•	Demographic info about customers – gender, age range, and if they have partners and dependents
 
 _Note: One can use the Dataset from the repository available_
 
@@ -134,8 +122,6 @@ Once the clone of whole repository is completed and Upon completion of installat
 
 In the given Data set, there were NA’s, and it is not a better approach to fit a model with NA’s as the same may lead to biased or improper models. Upon analyzing the data, the NA’s are in column Total Charges and is due to Tenure being ‘0’. By the same we can infer that the people were newly joined and can keep their total charges as ‘0’.
 
-* **************ADD OUTPUT OF STRUCTURE OF DATASET****************************
-  
 Also, the Senior Citizen Variable in Data set is marked as Integer variable where as it should be a Categorical variable and so it has been changed to same.
 
 <img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Senior%20Citizen.png">
