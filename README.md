@@ -24,16 +24,16 @@ The Main Objective is to
 To clone the project the easy way is to install GIT DESKTOP <a href="https://desktop.github.com/" target="_blank">here</a> 
 (download the installation file based on the OS) 
 
-Once the Installation file is downloaded Doubke click on the file and Follow the instructions.
+Once the Installation file is downloaded Double click on the file and Follow the instructions.
 (i.e, either set up repository based on GitHub account or skip the step and provide name and email.)
 
 <img src="https://github.com/ACM40960/project-Pyate/blob/main/images/git%20step1.png">
 
-once the above screen is reached, Click "Clone a repository from the internet"
+Once the above screen is reached, Click "Clone a repository from the internet"
 
 <img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Clone%20URL%20Step.png">
 
-In the next screen select the URL Tab and enter URL and local file for repository to be cloned into as shown in image.
+In the next screen, select the URL Tab and enter URL and choose local file for repository to be cloned into as shown in image.
 
 Finally click clone and the Repository would be cloned into local machine.
 
