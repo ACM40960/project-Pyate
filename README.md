@@ -118,7 +118,7 @@ Once the clone of whole repository is completed and Upon completion of installat
 
 •	One can wish to Visualize or not to visualize the Analysis plots by simply `check or uncheck` the check box provided.
 
-<img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Shiny%20App%20Merged.png">
+<img src="https://github.com/ACM40960/project-Pyate/blob/main/images/combined%20image_1.png">
 
 •	Provide values from the available Inputs and Click Predict to if a customer would Churn or Not Churn.
 
