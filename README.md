@@ -92,7 +92,7 @@ Post the Data Wrangling and EDA the models were trained and fit over the dataset
 
 On other hand it is also possible to determine the churn Percentage of the given dataset by uploading the .csv file.
 
-### The Process for the above is as below:
+### The Process to Run the application is as below:
 
 Once the clone of whole repository is completed and Upon completion of installation of R, R studio and all the mentioned packages
 
