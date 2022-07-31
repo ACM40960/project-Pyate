@@ -1,22 +1,22 @@
+"MonthlyCharges" - 104.80
+"TotalCharges" - 3046.05
+"tenure" - 28
+"PaymentMethod" - Electronic Cheque
+"OnlineBackup" - No
+"Contract" - Month To Month
 "gender" - Female
 "SeniorCitizen" - No
 "Partner" - Yes
 "Dependents" - No
-"tenure" - 28
+"PaperlessBilling" - Yes
 "PhoneService" - Yes
 "MultipleLines" - Yes
 "InternetService" - Fiber Optic
 "OnlineSecurity" - No
-"OnlineBackup" - No
 "DeviceProtection" - Yes
 "TechSupport" - Yes
 "StreamingTV" - Yes
 "StreamingMovies" - Yes
-"Contract" - Month To Month
-"PaperlessBilling" - Yes
-"PaymentMethod" - Electronic Cheque
-"MonthlyCharges" - 104.80
-"TotalCharges" - 3046.05
 
 
 Click Predict

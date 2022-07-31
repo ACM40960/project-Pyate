@@ -1,22 +1,23 @@
+"MonthlyCharges" - 42.30
+"TotalCharges" - 1840.75
+"tenure" - 45
+"PaymentMethod" - Bank Transfer(Auto)
+"OnlineBackup" - No
+"Contract" - One Year
 "gender" - Male
 "SeniorCitizen" - No
 "Partner" - No
 "Dependents" - No
-"tenure" - 45
+"PaperlessBilling" - No
 "PhoneService" - No
 "MultipleLines" - No
 "InternetService" - DSL
 "OnlineSecurity" - Yes
-"OnlineBackup" - No
 "DeviceProtection" - Yes
 "TechSupport" - Yes
 "StreamingTV" - No
 "StreamingMovies" - No
-"Contract" - One Year
-"PaperlessBilling" - No
-"PaymentMethod" - Bank Transfer(Auto)
-"MonthlyCharges" - 42.30
-"TotalCharges" - 1840.75
+
 
 
 Click Predict
