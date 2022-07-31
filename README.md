@@ -120,7 +120,7 @@ Once the clone of whole repository is completed and Upon completion of installat
 
 •	Finally, a plot would be displayed with the percent of Customers who would churn and percent of customers who would retain them self with the organization.
 
-<img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Shiny%20App%20Merged.png">
+<img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Shiny%20App%20Merged_1.png">
  
 •	To Check above scenario please load the “Improper Dataset” from the Model folder by using browse option
  
