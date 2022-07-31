@@ -43,7 +43,7 @@ Software used to build best suited models is R and IDE used is R studio.
 
 As the Project is developed in R one must need R and R studio to run the project and below are the instructions to install the same.
 
-•	Install R (Version 4.1.2 or above) <a href="https://cran.r-project.org/bin/windows/base/" target="_blank">from here</a>
+•	install R (Version 4.1.2 or above) <a href="https://cran.r-project.org/bin/windows/base/" target="_blank">from here</a>
 (Above is the URL for Windows OS and for other OS please <a href="https://data-flair.training/blogs/how-to-install-r/" target="_blank">reach here</a>  for step-by-step process).
 
 •	Once the file is downloaded double click the installation file and follow the instructions to complete the installation.
