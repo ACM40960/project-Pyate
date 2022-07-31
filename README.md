@@ -118,13 +118,9 @@ Once the clone of whole repository is completed and Upon completion of installat
 
 •	One can wish to Visualize or not to visualize the Analysis plots by simply `check or uncheck` the check box provided.
 
-<img src="https://github.com/ACM40960/project-Pyate/blob/main/images/combined%20image_1.png">
+<img src="https://github.com/ACM40960/project-Pyate/blob/main/images/Shiny%20App%20Merged.png">
 
-•	Provide values from the available Inputs and Click Predict to if a customer would Churn or Not Churn.
 
-•	On the Other Tab to Get the Churn Percentage Click on the Browse button and Select the Provided “Churn Data.csv”.
-
-•	Once the Upload is done, Model would predict the Outcomes of Each individual customer in given excel.
 
 •	Finally, a plot would be displayed with the percent of Customers who would churn and percent of customers who would retain them self with the organization.
  (As shown below)
@@ -168,7 +164,7 @@ So now the data set is in proper state we can perform some analysis over the sam
 
 In the Current context two of the many available models have been tried to fit i.e., logistic Regression and Decision Tree where below is the Summary of both models. 
 
-<img src="https://github.com/ACM40960/project-Pyate/blob/main/images/combined%20image.png">
+<img src="https://github.com/ACM40960/project-Pyate/blob/main/images/combined%20image_1.png">
 
 We can see that the Accuracy and Sensitivity of the Logistic Regression is High compared to Decision Tree even Specificity is reasonal among the both. We can also infer that from the summary tables Logistic Regession perfroms slightly better than the Decision tree and can be used for the future predictions.
 Also From the ROC AUC curve we an assess that Logistic regression is better performing one than the Decision Tree.
